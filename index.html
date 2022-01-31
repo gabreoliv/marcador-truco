@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Murecho">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+<div class="container">
+  <div class="team"> 
+    <div class="bolinhas">
+      <div class="bolinha marcada"> </div>
+      <div class="bolinha"> </div>
+      <div class="bolinha"> </div>
+      <div class="bolinha"> </div>
+      <div class="bolinha"> </div>
+    </div>
+    <div class="team-2"> 
+      <div class="team-name">Nós</div>
+      <div class="score" id="nos">6</div>
+      <div> 
+        <button onclick="mudaPlacar('nos', -1)"> &LT; </button>
+        <button onclick="mudaPlacar('nos', 1)"> +1 </button>
+        <button onclick="mudaPlacar('nos', 3)"> +3 </button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="team"> 
+   
+    <div class="team-2"> 
+      <div class="team-name">Eles</div>
+      <div class="score" id="eles"> 7 </div>
+      <div> 
+        <button onclick="mudaPlacar('eles', -1)"> &LT; </button>
+        <button onclick="mudaPlacar('eles', 1)"> +1 </button>
+        <button onclick="mudaPlacar('eles', 3)"> +3 </button>
+      </div>
+    </div>
+    <div class="bolinhas">
+      <div class="bolinha marcada"> </div>
+      <div class="bolinha marcada"> </div>
+      <div class="bolinha"> </div>
+      <div class="bolinha"> </div>
+      <div class="bolinha"> </div>
+    </div>
+  </div>
+  
+</div>
+    </body>
+</html>
