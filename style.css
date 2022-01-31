@@ -35,7 +35,7 @@ body {
 }
 
 .current-team {
-  text-shadow: 0px 0px 3px rgb(216, 13, 206);
+  text-shadow: 0px 0px 3px rgb(231, 123, 23);
 }
 
 .score {
@@ -55,17 +55,17 @@ body {
 }
 
 .marcada {
-  background: #ff47ab;
+  background: #ffcd95;
 }
 
 button {
   font-size: 20px;
   font-family: murecho;
   border-radius: 11px;
-  border: 1px solid #000;
+  border: 0px solid rgb(248, 123, 66);
   padding: 7px 14px;
   margin: 12px 6px;
-  background: #e1e1e1;
+  background: #fde7cd;
 }
 
 .buttons {
