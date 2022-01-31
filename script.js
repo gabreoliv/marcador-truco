@@ -20,7 +20,12 @@ function mudaPlacar(id, amount) {
   if (newScore >= MAX_SCORE) {
     element.innerHTML = MAX_SCORE
     setTimeout(function () {
-      alert(id + " ganhou a partida!")
+      if(id=="nos") {
+        alert(id + " ganhamos a partida!")
+      }
+      else {
+        alert(id + " ganharam a partida")
+      }
       document.getElementById("nos").innerHTML = 0
       document.getElementById("eles").innerHTML = 0
     }, 10)
