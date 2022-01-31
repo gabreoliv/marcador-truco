@@ -35,7 +35,7 @@ body {
 }
 
 .current-team {
-  text-shadow: 0px 0px 3px rgb(231, 123, 23);
+  /* text-shadow: 0px 0px 3px rgb(231, 123, 23); */
 }
 
 .score {
