@@ -34,9 +34,16 @@ body {
   font-size: 50px;
 }
 
+.current-team {
+  text-shadow: 0px 0px 3px rgb(216, 13, 206);
+}
+
 .score {
   font-size: 90px;
   font-family: Murecho;
+  flex: 1;
+  display: flex;
+  align-items: center
 }
 
 .bolinha {
