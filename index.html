@@ -9,18 +9,18 @@
 <body>
   <div class="container">
     <div class="team">
-      <div class="bolinhas">
-        <div class="bolinha"> </div>
-        <div class="bolinha"> </div>
-        <div class="bolinha"> </div>
-        <div class="bolinha"> </div>
-        <div class="bolinha"> </div>
+      <div class="bolinhas" id="bolinhas-nos">
+        <div class="bolinha"></div>
+        <div class="bolinha"></div>
+        <div class="bolinha"></div>
+        <div class="bolinha"></div>
+        <div class="bolinha"></div>
       </div>
       <div class="team-2">
         <div class="team-name current-team">Nós</div>
         <div class="score" id="nos">0</div>
         <div class="buttons">
-          <button onclick="mudaPlacar('nos', -1)"> &LT; </button>
+          <button onclick="mudaPlacar('nos', -1)"> -1 </button>
           <button onclick="mudaPlacar('nos', 1)"> +1 </button>
           <button onclick="mudaPlacar('nos', 3)"> +3 </button>
         </div>
@@ -33,12 +33,12 @@
         <div class="team-name">Eles</div>
         <div class="score" id="eles"> 0 </div>
         <div class="buttons">
-          <button onclick="mudaPlacar('eles', -1)"> &LT; </button>
+          <button onclick="mudaPlacar('eles', -1)"> -1 </button>
           <button onclick="mudaPlacar('eles', 1)"> +1 </button>
           <button onclick="mudaPlacar('eles', 3)"> +3 </button>
         </div>
       </div>
-      <div class="bolinhas">
+      <div class="bolinhas" id="bolinhas-eles">
         <div class="bolinha"> </div>
         <div class="bolinha"> </div>
         <div class="bolinha"> </div>

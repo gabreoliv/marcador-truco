@@ -2,7 +2,7 @@ var MAX_SCORE = 12
 
 function toggleTeam () {
   var teamNames = document.querySelectorAll(".team-name")
-  console.log(teamNames)
+
   for (const node of teamNames) {
     node.classList.toggle("current-team")
   }
@@ -22,9 +22,11 @@ function mudaPlacar(id, amount) {
     setTimeout(function () {
       if(id=="nos") {
         alert(id + " ganhamos a partida!")
+        aumentaVitoria("bolinhas-nos")
       }
       else {
         alert(id + " ganharam a partida")
+        aumentaVitoria("bolinhas-eles")
       }
       document.getElementById("nos").innerHTML = 0
       document.getElementById("eles").innerHTML = 0
@@ -32,6 +34,16 @@ function mudaPlacar(id, amount) {
   } else {
     element.innerHTML = newScore
   }
-  
-  console.log(score)
+}
+
+function aumentaVitoria(id) {
+  var element = document.querySelector("#" + id + " .bolinha:not(.marcada)")
+  if (element) {
+    element.classList.add("marcada")
+  } else {
+    var bolinhas = document.querySelectorAll(".bolinha")
+    for (var bolinha of bolinhas) {
+      bolinha.classList.remove("marcada") 
+    }
+  }
 }
